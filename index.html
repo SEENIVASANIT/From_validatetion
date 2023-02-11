@@ -207,12 +207,12 @@ th{
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="log_input-field">
-                        <input type="password" class="password" placeholder="Enter your password" id="psw" required>
+                        <input type="password" class="password" placeholder="Enter your password" id="password" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
                     <div class="log_input-field">
-                        <input type="date"  placeholder="Select your dob"  id="dob" required>
+                        <input type="date"  placeholder="Select your dob"  id="dob" max="2005-02-11" min="1968-02-11" required>
                         <i class="uil-calender icon"></i>
                     </div>
                     <div class="checkbox-text">
@@ -274,7 +274,7 @@ th{
     const form_validate=()=>{
 const name=document.getElementById("name").value;
 const email=document.getElementById("email").value;
-const psw=document.getElementById("psw").value;
+const psw=document.getElementById("password").value;
 const dob=document.getElementById("dob").value;
 const check=document.getElementById("logCheck").checked;
     if(dob>='1968-02-11' && dob<='2005-02-11'){
